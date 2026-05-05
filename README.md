@@ -19,3 +19,15 @@ This makes it possible to study questions such as:
 ## Status
 
 Project sketch. No implementation yet.
+
+## Related Work
+
+Several existing projects study adjacent parts of this problem:
+
+- [The Synthetic Web](https://arxiv.org/abs/2603.00801) constructs adversarially curated mini-internets for diagnosing epistemic weaknesses of language agents under manipulated search rankings.
+- [SeekBench](https://arxiv.org/abs/2509.22391) evaluates epistemic competence in information-seeking agents through trace-level analysis of grounding, search recovery, and calibration.
+- [ConflictBank](https://proceedings.neurips.cc/paper_files/paper/2024/hash/baf4b960d118f838ad0b2c08247a9ebe-Abstract-Datasets_and_Benchmarks_Track.html), [MAGIC](https://arxiv.org/abs/2507.21544), [WikiContradict](https://arxiv.org/abs/2406.13805), and [(D)RAGged Into a Conflict](https://research.google/pubs/dragged-into-a-conflict-detecting-and-addressing-conflicting-sources-in-retrieval-augmented-llms/) examine how language models handle conflicting retrieved evidence.
+- [WebArena](https://arxiv.org/abs/2307.13854) and [BrowserGym](https://github.com/ServiceNow/BrowserGym) provide reproducible web-agent environments, with a stronger focus on task completion than epistemic manipulation.
+- [Inspect AI](https://inspect.aisi.org.uk/) provides general evaluation infrastructure for model and agent evaluations, including tool use, sandboxing, scoring, and traces.
+
+`synthetic-epistemics` is intended to sit closer to the harness layer: a way to construct, vary, and inspect tool-mediated information environments, with benchmarks as one output rather than the only goal.
